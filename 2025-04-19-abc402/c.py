@@ -12,8 +12,13 @@ for i in range(m):
     for e in values:
         idx[e].append(i)
 
+print('a:', a)
+print('idx:', idx)
+print('cnt:', cnt)
+
 ans = 0
 b_list = list(map(lambda x: int(x) - 1, input().split()))
+print('b_list:', b_list)
 for i in range(n):
     b = b_list[i]
     for id in idx[b]:
